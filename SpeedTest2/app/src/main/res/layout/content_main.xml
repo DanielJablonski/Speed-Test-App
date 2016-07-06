@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edgarespino.speedtest.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/relative">
+
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        tools:context=".MainActivity">
+
+    </FrameLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:text="Start Reading"
+        android:id="@+id/button"
+        android:height="10dp"
+        android:background="@drawable/black_button"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentEnd="false"
+       />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="The AI Lab of the 1970s was by all accounts a special place. Cutting-edge projects and top-flight researchers gave it an esteemed position in the world of computer science. The internal hacker culture and its anarchic policies lent a rebellious mystique as well. Only later, when many of the lab&apos;s scientists and software superstars had departed, would hackers fully realize the unique and ephemeral world they had once inhabited. &quot;It was a bit like the Garden of Eden,&quot; says Stallman, summing up the lab and its software-sharing ethos in a 1998 Forbes article. &quot;It hadn&apos;t occurred to us not to cooperate.&quot;1  Such mythological descriptions, while extreme, underline an important fact. The ninth floor of 545 Tech Square was more than a workplace for many. For hackers such as Stallman, it was home.  The word &quot;home&quot; is a weighted term in the Stallman lexicon. In a pointed swipe at his parents, Stallman, to this day, refuses to acknowledge any home before Currier House, the dorm he lived in during his days at Harvard. He has also been known to describe leaving that home in tragicomic terms. Once, while describing his years at Harvard, Stallman said his only regret was getting kicked out. It wasn&apos;t until I asked Stallman what precipitated his ouster, that I realized I had walked into a classic Stallman setup line.  &quot;At Harvard they have this policy where if you pass too many classes they ask you to leave,&quot; Stallman says.  With no dorm and no desire to return to New York, Stallman followed a path blazed by Greenblatt, Gosper, Sussman, and the many other hackers before him. Enrolling at MIT as a grad student, Stallman rented an apartment in nearby Cambridge but soon viewed the AI Lab itself as his de facto home. In a 1986 speech, Stallman recalled his memories of the AI Lab during this period:  I may have done a little bit more living at the lab than most people, because every year or two for some reason or other I&apos;d have no apartment and I would spend a few months living at the lab. And I&apos;ve always found it very comfortable, as well as nice and cool in the summer. But it was not at all uncommon to find people falling asleep at the lab, again because of their enthusiasm; you stay up as long as you possibly can hacking, because you just don&apos;t want to stop. And then when you&apos;re completely exhausted, you climb over to the nearest soft horizontal surface. A very informal atmosphere.2 The lab&apos;s home-like atmosphere could be a problem at times. What some saw as a dorm, others viewed as an electronic opium den. In the 1976 book Computer Power and Human Reason, MIT researcher Joseph Weizenbaum offered a withering critique of the &quot; computer bum,&quot; Weizenbaum&apos;s term for the hackers who populated computer rooms such as the AI Lab. &quot;Their rumpled clothes, their unwashed hair and unshaved faces, and their uncombed hair all testify that they are oblivious to their bodies and to the world in which they move,&quot; Weizenbaum wrote. &quot;[Computer bums] exist, at least when so engaged, only through and for the computers.&quot;3 Almost a quarter century after its publication, Stallman still bristles when hearing Weizenbaum&apos;s &quot;computer bum&quot; description, discussing it in the present tense as if Weizenbaum himself was still in the room. &quot;He wants people to be just professionals, doing it for the money and wanting to get away from it and forget about it as soon as possible,&quot; Stallman says. &quot;What he sees as a normal state of affairs, I see as a tragedy.&quot;"
+                android:id="@+id/textView"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_alignParentStart="true"
+                android:visibility = "invisible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Stop Reading"
+                android:id="@+id/button2"
+                android:textSize="30dp"
+                android:background="@drawable/black_button"
+                android:textColor="#ffffff"
+                android:textStyle="italic|bold"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
